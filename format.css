@@ -1,0 +1,371 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.background{
+	width: 100%;
+	height: 100%;
+	background-image: url('cool-b.jpg');	
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	overflow-y: auto;}
+.bg-image {
+  /* Full height */
+  height: 50%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+.img1 { background-image: url("graf.jpg"); }
+.img2 { background-image: url("gra2.jpg"); }
+.img3 { background-image: url("gra.jpg"); }
+.img4 { background-image: url("gra3.jpg"); }
+.img5 { background-image: url("gra4.jpg"); }
+.img6 { background-image: url("wow.png"); 
+	}
+.background1{
+	width: 100%;
+	height: 100%;
+	background-image: url(graf.jpg);	
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	overflow-y: auto;
+	}
+.background2{
+	width: 100%;
+	height: 100%;
+	background-image: url(gambler.jpg);	
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	overflow-y: auto;
+}
+.background3{
+	width: 100%;
+	height: 100%;
+	background-image: url(gambler.jpg);	
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	overflow-y: auto;
+	
+}
+.menubar{
+	width: 350px;
+	height: auto;
+	position: fixed;
+	top: 0%;
+	right: 0;
+	display: inline;
+	
+
+}
+.menubar a{
+	text-decoration: none;
+	font-size: 27px;
+	font-family: initial;
+	font-weight: bold;
+	width: 100%;
+	height: 80px;
+	margin: 5px, 0;
+	float: left;
+	color: white;
+	display: inline;	
+	
+	opacity: 0.7;
+	line-height: 90px;
+	text-align: center;
+	transition: 600ms;
+
+
+}
+.menubar a:hover{
+	background-color: blue;
+	color: white;
+	width: 100%;
+}
+.menubar a:focus{
+	background-color: blue;
+	color: white;
+	width: 100%;
+}
+
+
+.homepage{
+	position: absolute;
+	left: 2%;
+	top: 20%;
+	right: 40%;
+	color: #f2f2f2;
+	font-family: verdana;
+	text-transform: uppercase;
+}
+.homepage h1{
+	font-size: 60px;
+	border-bottom: 2px solid white;
+	padding-right: 30%;
+	color: white;
+}
+.homepage h2{
+	font-size: 20px;
+	color: #00cc00;
+}
+.homepage h3{
+	font-size: 50px;
+	margin-top: 30px;
+	background-color: green;
+	border-bottom: 2px solid white;
+	padding-right: 30%;
+}
+.footer{
+	background-color: red; 
+}
+
+
+
+.Blog {
+	
+	margin-top: 60px;
+	margin-right: 1150px;
+	margin-left: 0%;
+	text-align: left;
+	color: white;
+	font-family: verdana;
+	height: 500px;
+	background-color: blue;
+}
+.paragraph{
+	
+	
+	top: 60px;
+	margin-right: 370px;
+	left: 19%;
+
+	
+	position: absolute;
+
+
+}
+.paragraph p{
+	font-size: 15px;
+	font-family: verdana;
+	text-align: justify;
+	color: #ffffff;
+	font-weight: bold;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 0px;
+	
+}
+.sub_head{
+	font-size: 12px;
+	color: white;
+}
+.contact{
+	position: absolute;
+	left: 230px;
+	top: 150px;
+	right: 400px;
+	color:  #ffffff;
+	font-family: verdana;
+	background-color: rgba(0,0,0,0);
+
+}
+.contact h1{
+	color: #ffffff;
+	font-size: 40px;
+	text-align: center;
+	border-bottom: 2px solid#ffffff;
+
+}
+
+.contact p{
+	color:  #ffffff;
+	font-size: 15px;
+	text-align: center;
+	
+}
+.icon{
+	position: fixed;
+	left:50px;
+	top:25%;
+	transform: translate(-20%, -50%);
+	list-style: none;
+
+}
+#fb{
+	width: 50px;
+    height: 50px;
+    
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s transform 2s;
+}
+#fb:hover{
+	width: 100px;
+	height: 100px;
+	-webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#insta{
+	margin-top: 20px;
+	width: 50px;
+    height: 50px;
+    
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s transform 2s;
+}
+#insta:hover{
+	width: 100px;
+	height: 100px;
+	-webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#tweet{
+	margin-top: 20px;
+	width: 50px;
+    height: 50px;
+    
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s transform 2s;
+}
+#tweet:hover{
+	width: 100px;
+	height: 100px;
+	-webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#yt{
+	margin-top: 20px;
+	width: 50px;
+    height: 50px;
+    
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s transform 2s;
+}
+#yt:hover{
+	width: 100px;
+	height: 100px;
+	-webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.contactform{
+	position: absolute;
+	top: 60%;
+	left: 40%;
+	transform: translate(-50%, -40%);
+	text-align: center;
+	
+	color: white;
+}
+
+input{
+	width: 100%;
+	margin: 20px 0px;
+	border: none;
+	background: rgba(0,0,0,0);
+	border-bottom: 2px solid#008000;
+	color: white;
+
+}
+#msg{
+	margin-top: 90px;
+
+}
+
+button{
+	padding: 15px 30px;
+	font-size: 12px;
+
+	background:rgba(101,204,51,1);
+	border: none;
+	border-radius: 2px;
+	opacity: 0.7;
+	
+}
+
+
+.sectiona{
+	margin-top: 30px;
+	margin-left: 25%;
+	margin-right: 28%;
+	
+	
+	
+	font-family: verdana;
+	opacity: 1;
+	background-color: transparent;
+}
+
+.sectionb{
+	margin-top: 10px;
+	margin-right: 28%;
+	margin-left: 230px;
+	opacity: 0.7;
+	background-color:#ccb559;
+}
+.sectionb p{
+	font-family: arial;
+	font-weight: bold;
+	margin-left: 10px;
+	font-size: 15px;
+
+}
+.sectionc{
+	margin-top: 10px;
+	margin-right: 28%;
+	margin-left: 230px;
+	opacity: 0.6;
+	background-color: #ccb559;
+	height: 200px;
+}
+.sectionc p{
+	font-family: arial;
+	font-weight: bold;
+	margin-left: 10px;
+	font-size: 15px;
+
+}
+.image {
+	margin-top: 0%;
+	position: absolute;
+	margin-left: 230px;
+	background-color: #f9f9f7;
+	border-radius: 40%;
+}
+.Research{
+	top: 60px;
+	margin-right: 28%;
+	left: 19%;
+
+	opacity: 0.9;
+	position: absolute;
+	background-color: white;
+	color: black;
+	font-family: verdana;
+
+	
+}
+
+.headings{
+	margin-top: 60px;
+	margin-right: 1150px;
+	margin-left: 0%;
+	text-align: left;
+	color: white;
+	font-family: verdana;
+	height: 500px;
+	background-color: green;
+
+}
+
+
+

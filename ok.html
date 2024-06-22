@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Travel Advisors - Virtuoso</title>
+        
+            <link rel="stylesheet" type="text/css" href="format.css">
+        <link  href="/TouchPoints/Sites/VCom/ContentBundle/jquery-ui.bundle.css?v=mdlcdowM1DmyEc-bCZlJin-SqBPdSjhxMvzcv8STAK41" type="text/css" rel="stylesheet"></link>
+
+    <link  href="/TouchPoints/Sites/VCom/ContentBundle/base.bundle.css?v=xdFUxmd0sFyLth_hWrFZCo-sx2isuWMzln20D7xVxIo1" type="text/css" rel="stylesheet"></link>
+
+    
+    <link href="/TouchPoints/Sites/VCom/ContentBundle/product-advisor-landing.bundle.css?v=1nT5VNUnbozKxLk7jXxApyGLV6UPeJY8_dW4_1gvdK01" type="text/css" rel="stylesheet"></link>
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+
+    <script type="text/javascript">
+        //Load Jquery if CDN is down.
+        //document.write being used here to stop script execution while jquery loads
+        if (typeof jQuery === 'undefined') {
+            document.write(unescape("%3Cscript src='/TouchPoints/Sites/VCom/third-party/jquery/jquery-2.1.4.js' type='text/javascript'%3E%3C/script%3E"));
+            document.write(unescape("%3Cscript src='/TouchPoints/Sites/VCom/third-party/jquery-ui/jquery-ui-1.9.2.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <script src="/TouchPoints/Sites/VCom/ContentBundle/jquery-ui.bundle.js?v=Jow-EvAn9uODqWme7ELkisgGL4NRVP3-Ol34iKAl_rg1"></script>
+
+    <script src="/TouchPoints/Sites/VCom/ContentBundle/base.bundle.js?v=j_v7xY3PExvccTAkdOxwZACxr9k7vpewi7l6bLl3DYY1"></script>
+
+
+
+
+
+
+
+    
+
+
+   
+</head>
+<body >
+
+
+
+
+
+<header class="header__container">
+    <div class="header__inner">
+
+        <div class="header__member-logo">
+            
+        </div>
+
+        <div class="header__logo">
+            
+<a id="HomeLogoLink" href="/">
+    <img src="logo.svg" alt="Glitch.bipin" height="35">
+</a>
+        
+        
+            
+        </div>
+        <div class="header__search" id="headerAreaTwo">
+            
+
+
+
+<div class="search__container fouc" id="searchBoxWrapper">
+    <input type="text" placeholder="Search" id="searchBoxMainEntry" maxlength="100" />
+    <button class="search__button" id="searchBoxBackdropButton"><i class="icon-search-ut"></i></button>
+</div>
+
+        </div>
+        <nav class="header__subnav js-setActiveLink" id="headerAreaFive">
+            
+
+
+<ul class="navbar__sub">
+    
+
+    <li class="my-advisor navbar__item navbar__item--static">
+        <a class="navbar__label" href="/travel-advisors">
+            <span class="navbar__text" id="advisorLink">Travel Advisors
+            </span>
+        </a>
+    </li>
+    
+    
+    <li class="navbar__item navbar__item--static">
+        <a class="navbar__label" href="/destinations">
+            <span class="navbar__text" id="destinationLink">Destinations</span>
+        </a>
+    </li>
+
+    
+    <li class="navbar__item navbar__item--static">
+        <a class="navbar__label" href="/luxury-hotels">
+            <span class="navbar__text" id="hotelsLink">Hotels</span>
+        </a>
+    </li>
+
+    
+    <li class="navbar__item navbar__item--static">
+        <a class="navbar__label" href="/luxury-cruises">
+            <span class="navbar__text" id="cruisesLink">Cruises</span>
+        </a>
+    </li>
+
+    
+    <li class="navbar__item navbar__item--static">
+        <a class="navbar__label" href="/luxury-tours">
+            <span class="navbar__text" id="toursLink">Tours</span>
+        </a>
+    </li>
+
+    
+    
+        <li class="navbar__item navbar__item--static" data-virtuosotest="whyVirtuosoLink">
+            <a class="navbar__label" href="/why-virtuoso/about-us">
+                <span class="navbar__text" id="aboutVirtuosoLink">About Virtuoso</span>
+            </a>
+        </li>
+    
+</ul>
+
+       
+
+</li>
+
+
+                
+             
+
+</header>
+
+
+    <div id="page" class="container_24">
+        <article>
+            
+
+
+<form name="advisor-form">
+
+    <div class="fluid_12 vcom__base alpha omega vcom__headings">
+
+
+        
+        <section class="grid_12 alpha omega advisor-lp__banner">
+            <div class="grid_12 text--inverse">
+                <h1 class="center-align heading--jumbo heading--cozy">Find a Travel Advisor</h1>
+                <h3 class="center-align text--inverse">Expert Advice, Worry-Free Planning</h3>
+                <div class="advisor-lp__divider"></div>
+            </div>
+        </section>
+        <section class="grid_8 push_2 alpha omega clearfix center-align advisor-lp__content">
+
+            <div>
+                <h4>Which country do you want your advisor to specialize in?</h4>
+                <div class="text--instructional">Choose up to three.</div>
+                <div class="filter-buttons spacing-top-half btn-group-toggle" id="filter-country" data-toggle="buttons" data-category="advisor_specilty_destination_for_facet" data-operator="AND">
+                            <label class="btn btn-outline-default">
+                                <input type="checkbox" name="filter-country[]" value="France">France
+                            </label>
+                            <label class="btn btn-outline-default">
+                                <input type="checkbox" name="filter-country[]" value="Italy">Italy
+                            </label>
+                            
+                         
+                            <label class="btn btn-outline-default">
+                                <input type="checkbox" name="filter-country[]" value="Japan">Japan
+                            </label>
+                            <label class="btn btn-outline-default">
+                                <input type="checkbox" name="filter-country[]" value="Maldives">Maldives
+                            </label>
+                            <label class="btn btn-outline-default">
+                                <input type="checkbox" name="filter-country[]" value="Indonesia">Indonesia
+                            </label>
+                           
+                            <label class="btn btn-outline-default">
+                                <input type="checkbox" name="filter-country[]" value="United Kingdom">United Kingdom
+                            </label>
+                            <label class="btn btn-outline-default">
+                                <input type="checkbox" name="filter-country[]" value="United States - All">United States
+                            </label>
+
+                </div>
+            </div>
+
+            <div id="country-toggle-container">
+
+                <div class="js-add-country-container"><button type="button" class="btn btn-medium btn-inline js-add-country-link">+ Add a different country</button></div>
+
+                <div class="state--display-none" id="country-dropdown-container">
+                    <div class="js-country-dropdown"></div>
+                    <input type="hidden" class="countryHidden" id="countryHidden" value="">
+                </div>
+            </div>
+
+
+
+            <div class="spacing-top-2">
+                <h4 class="spacing-bottom-half">Which type of travel interests you the most?</h4>
+                <div class="text--instructional">Choose up to three.</div>
+                <div class="filter-buttons spacing-top-half btn-group-toggle" id="filter-traveltype" data-toggle="buttons" data-category="advisor_interest_types" data-operator="AND">
+                            <label class="btn btn-outline-default">
+                                <input type="checkbox" name="filter-country[]" value="Beach &amp; Sun">Beach &amp; Sun
+                            </label>
+                            <label class="btn btn-outline-default">
+                                <input type="checkbox" name="filter-country[]" value="Family Travel">Family Travel
+                            </label>
+                            <label class="btn btn-outline-default">
+                                <input type="checkbox" name="filter-country[]" value="Ocean Cruising">Ocean Cruising
+                            </label>
+                            <label class="btn btn-outline-default">
+                                <input type="checkbox" name="filter-country[]" value="Honeymoons">Honeymoons
+                            </label>
+                            <label class="btn btn-outline-default">
+                                <input type="checkbox" name="filter-country[]" value="Adventure">Adventure
+                            </label>
+                            <label class="btn btn-outline-default">
+                                <input type="checkbox" name="filter-country[]" value="Culture, History &amp; Arts">Culture, History &amp; Arts
+                            </label>
+                            <label class="btn btn-outline-default">
+                                <input type="checkbox" name="filter-country[]" value="Food &amp; Wine">Food &amp; Wine
+                            </label>
+                            <label class="btn btn-outline-default">
+                                <input type="checkbox" name="filter-country[]" value="Independent Tours">Independent Tours
+                            </label>
+
+                </div>
+            </div>
+
+
+           
+            </div>
+
+            <script type="text/html" id="cb-button--template">
+                <label class="btn btn-outline-default btn-sm"><input type="checkbox" name="" value="" /></label>
+            </script>
+
+            <div class="spacing-top-2">
+                <button type="button" class="btn btn-cta js-find-your-advisor">Find an Advisor</button>
+
+                <div class="spacing-top-1">
+                    <a href="/advisors#all">Browse All Advisors</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="grid_12 alpha omega advisor-lp__section">
+            <div class="advisor-lp__divider"></div>
+            <div class="spacing-top-3 panel-group center-justify-content">
+               
+                <div class="panel-default panel-hover advisor-lp__advisor-panel ">
+                    <a href="/Marketing-Landing-Pages/Why-Work-With-An-Advisor">
+                        <img alt="Why Work with a Travel Advisor?" src="https://media.virtuoso.com/m/cms/vcom/LandingPages/advisor/Why_work_with_a_travel_advisor.jpg">
+                        <div class="panel-block center-align">
+                            <h2 class="text--fancy">Why Work with a Travel<br/> Advisor?</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="panel-default panel-hover advisor-lp__advisor-panel ">
+                    <a href="/articles/Working-With-An-Advisor/Real-Stories-From-Virtuoso-Travelers">
+                        <img alt="Real Traveler Stories" src="https://media.virtuoso.com/m/cms/vcom/LandingPages/advisor/Real_traveler_stories.jpg">
+                        <div class="panel-block center-align">
+                            <h2 class="text--fancy spacing-top-1">Real Traveler Stories</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="panel-default panel-hover advisor-lp__advisor-panel ">
+                    <a href="/agencies">
+                        <img alt="Our Member Agencies" src="https://media.virtuoso.com/m/cms/vcom/LandingPages/advisor/Our_Member_Agencies.jpg">
+                        <div class="panel-block center-align">
+                            <h2 class="text--fancy spacing-top-1">Our Member Agencies</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div class="bottomFiller"></div>
+    <div class="bottomFiller"></div>
+
+</form>
+        </article>
+        <div class="bottomFiller"></div>
+    </div>
+    <footer>
+        <!-- footer control should go here -->
+
+
+
+<div class="footer__container">
+   
+    <div>
+       
+        <a href="http://blog.virtuoso.com/" rel="nofollow" class="footer__link">
+            Blog
+        </a>
+        
+    </div>
+    
+
+    
+        <div class="spacing-top-2">
+            <a href="http://www.facebook.com" class="footer__icon" target="_blank" rel="nofollow"><i class="icon-facebook-circle"></i></a>
+            <a href="https://instagram.com" class="footer__icon" target="_blank" rel="nofollow"><i class="icon-instagram-circle"></i></a>
+            <a href="http://pinterest.com" class="footer__icon" target="_blank" rel="nofollow"><i class="icon-pinterest-circle"></i></a>
+            <a href="http://twitter.com/virtuoso" class="footer__icon" target="_blank" rel="nofollow"><i class="icon-twitter-circle"></i></a>
+            <a href="http://www.youtube.com" class="footer__icon" target="_blank" rel="nofollow"><i class="icon-youtube-circle"></i></a>
+            <a href="https://flipboard.com" class="footer__icon" target="_blank" rel="nofollow"><i class="icon-flipboard"></i></a>
+        </div>
+    
+
+     

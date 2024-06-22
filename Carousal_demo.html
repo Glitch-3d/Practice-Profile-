@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo for n4 and n5 Carousal</title>
+</head>
+<body>
+	<center>
+	<div>
+		<h1>Carousal Demo!!!</h1>
+		<style type="text/css">
+			.images{
+				height: 250px;
+				width: 250px;
+				margin: 0 auto;
+				
+			}
+		</style>
+	</div>
+	</center>
+	
+	<div>
+		<img src="gra.jpg" class="images">
+		<img src="graf2.jpg" class="images">
+		<img src="wow.png" class="images">
+	</div>
+	<center>
+		<button onclick="change(-1)">&lt;</button>
+		<button onclick="change(1)">&gt;</button>
+	</center>
+	
+	<script type="text/javascript">
+
+		index = 0;
+
+		show(index);
+
+		function show(n){
+			var imgs = document.getElementsByClassName('images');
+
+			if (n> imgs.length-1) {
+				index= 0;
+			}
+
+			if(n<0){
+				index= imgs.length - 1;
+			} 
+
+			for (var i = 0; i <= imgs.length-1; i++) {
+				imgs[i].style.display="none";
+			}
+
+			imgs[index].style.display="block";
+		}
+
+
+		function automatic(){
+			index++;
+			show(index);
+			setTimeout(automatic, 1000);
+		}
+
+		automatic();
+
+		function change(n){
+			index+= n;
+			show(index);
+		}
+
+		
+	</script>
+
+</body>
+</html>

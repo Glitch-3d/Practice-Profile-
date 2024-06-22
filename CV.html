@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="format.css">
+	
+</head>
+<body>
+
+<div class="background">
+
+	<a href="graf.jpg"></a>
+	
+<div class="menubar">
+	<li><a href="homepage.html">HOME</a></li>
+	<li><a href="CV.html">PORTFOLIO</a></li>
+	<li><a href="Blog.html">BLOG</a></li>
+	<li><a href="Research.html">RESEARCH</a></li>
+	<li><a href="Contact.html">CONTACT ME</a></li>
+</div>
+<div class="cvbackground">
+
+
+<div class="image">
+	
+	 <a href='https://www.instagram.com/bipin.shresth/'><img  src="logo.svg" height="145" ;width="110";alt="logo"></a> 
+
+</div>	
+<div class="sectiona">
+		
+		<h1 style="  color: #ffffff; font-size: 70px; font-weight: normal; text-align: center; font-family: Lucida Handwriting;">WELCOME</h1>
+		<h2 style="text-align: center; color: #ffffff; margin-top: 20px; font-weight: bold;">A BIT ABOUT ME</h2>
+</div>
+
+<div class="sectionb" style="text-align: centre; overflow: auto; border: none; height: 200px; width: 1000px;">
+		<p style="color: #000000; font-size: 20px;">  </p>
+		<h2 style="font-size: 25px; font-family: verdana; font-weight: bolder; margin-top: 20px; margin-left: 10px; color: #000000; border-bottom: 2px solid#000000;">My Information</h2>
+		<p>Name:Bipin Shrestha</p>
+		<p>Mobile no: 9823123456</p>
+		<p>Age:23</p>
+		<p>Gender:Male</p>
+		<p>Address- Nakhipot, Kathmandu</p>
+		<p>Email- bipinshresthak@gmail.com</p>
+		<h3 style="font-size: 25px; font-family: verdana; font-weight: bolder; margin-top: 20px; margin-left: 10px; color: #000000; border-bottom: 2px solid#000000;">Birthday</h3>
+		<p>Date Of Birth- 9th April 2001</p>
+		<p>Place Of Birth- Nakhipot, Lalitpur </p>
+
+		<h4 style="font-size: 25px; font-family: verdana; font-weight: bolder; margin-top: 20px; margin-left: 10px; color: #000000; border-bottom: 2px solid#000000;">Status</h4>
+		<p>SLC- Completed from Little Angels' School </p>
+		<p>Higher Secondary- Completed +2 in Science faculty from Little Angels' College</p>
+		<p>Bachelors- Currently studying IT and student in Islington College</p>
+
+</div>
+
+<div class="sectionc" style="text-align: centre; overflow: auto; border: none; height: 200px; width: 1000px;"">
+	<h5 style="font-size: 25px; font-family: verdana; font-weight: bolder; margin-top: 20px; margin-left: 10px; color: #000000; border-bottom: 2px solid#000000;">HOBBIES</h5>
+	<p> I have many hobbies . They are:
+				
+		Swimming,Poker,Playing online games,Uno,Basketball,Riding bikes,Football,Snooker,Volleyball,Technology.</br>
+		Here are some images of Graffiti and code used to make this web sites:
+	</p>
+</div>
+
+
+
+<div>
+		<style type="text/css">
+			.images{
+				height: 500px;
+				width: 738px;
+				margin:0px 230px;
+				
+			}
+		</style>
+	</div>
+
+<center>	
+	<div>
+		<img src="wow.png" class="images">
+		<img src="Screenshot_1.png" class="images">
+		<img src="Screenshot_2.png" class="images">
+		<img src="graf.jpg" class="images">
+		<img src="gambler.jpg" class="images">
+		<img src="logo.svg" class="images">
+		<img src="gra2.jpg" class="images">
+		<img src="gra3.jpg" class="images">
+		<img src="cool-cat.jpg" class="images">
+		<img src="cweRrTc.jpg" class="images">
+	</div>
+		<button onclick="change(-1)">&lt;</button>
+		<button onclick="change(1)">&gt;</button>
+	</center>
+	
+	<script type="text/javascript">
+
+		index = 0;
+
+		show(index);
+
+		function show(n){
+			var imgs = document.getElementsByClassName('images');
+
+			if (n>imgs.length-1) {
+				index= 0;
+			}
+
+			if(n<0){
+				index= imgs.length - 1;
+			} 
+
+			for (var i = 0; i <= imgs.length-1; i++) {
+				imgs[i].style.display="none";
+			}
+
+			imgs[index].style.display="block";
+		}
+
+
+		function automatic(){
+			index++;
+			show(index);
+			setTimeout(automatic, 1000);
+		}
+
+		automatic();
+
+		function change(n){
+			index+= n;
+			show(index);
+		}
+
+		
+	</script>
+
+<div class="icon">
+	<li><a href="https://www.facebook.com/" target="_blank"> <img src="facebook.jpg" id="fb" width="50" height="50"></a></li>
+	<li><a href="https://www.instagram.com/" target="_blank"><img src="insta.jpg"  id="insta" width="50" height="50"></a></li>
+	<li><a href="https://www.twitter.com/" target="_blank"><img src="twitter.jpg"  id="tweet" width="50" height="50"></a></li>
+	<li><a href="https://www.youtube.com/" target="_blank"><img src="youtube.jpg" id="yt" width="50" height="50"></a></li>
+</div>
+	
+</div>
+
+
+
+</div>
+
+	
+	
+
+
+
+</body>
+</html>
